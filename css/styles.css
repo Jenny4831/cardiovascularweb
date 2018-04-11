@@ -1,0 +1,663 @@
+/*Import Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic);
+
+/*Fill up atleast the whole screen so that footer is at the bottom*/
+html {
+    position:relative; 
+    min-height: 100%;
+
+}
+
+body {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    
+}
+
+:focus {
+    /*Outline on focus selecting elements with keyboard*/
+    outline: rgba(255, 255, 255, 0.05) solid 1px;
+}
+
+/*
+ * Navigation elements
+*/
+a {
+    text-decoration: none;
+    color: #B10B0F;
+    font-weight: 400;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: none;
+}
+
+/*
+ * Header elements
+*/
+
+#main-header {
+    width: 100%;
+    min-width: 960px;
+    height: 45px;
+    
+    display: inline-block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    
+    background-color: #B10B0F;
+}
+
+#logo {
+    padding-top: 7px;
+}
+
+#header-nav {
+    display: block;
+    margin: 0px auto;
+    width: 960px;
+    height: 100%;
+}
+
+#header-nav ul a {
+    display: block;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    text-decoration: none;
+    height: 34px;
+    padding: 11px 20px 0 20px;
+}
+#header-nav ul a:active {
+    color: #DDD;
+}
+
+#header-nav ul {
+    list-style-type: none;
+    margin: 0;
+    
+    float: right;
+}
+
+#header-nav li {
+    float: left;
+}
+
+.nav-dropdown {
+    background-color: #B10B0F;
+    background-color: rgba(177, 11, 15, 0.5);
+    position: fixed;
+    height: 45px;
+    top: 45px;
+    left: 0;
+    display: none;
+    width: 100%;
+    min-width: 960px;
+}
+
+#header-nav .nav-dropdown ul {
+    list-style-type: none;
+    position: fixed;
+    
+}
+
+#search-button, #user-button {
+    width: 25px;
+    height: 25px;
+    padding: 7px 5px 0 12px;
+    
+    cursor: pointer;
+}
+
+#search-box {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+}
+
+#header-push {
+    clear: both;
+    height: 90px;
+}
+
+/*
+ * Header form elements
+*/
+
+
+form.inline {
+    margin: 0px auto;
+    width: 960px;
+    height: 100%;
+}
+
+form.inline label {
+     color: white;
+     margin: 0 10px;
+}
+
+form.inline input {
+    margin: 10px 0;
+}
+
+form.inline .text-input {
+    width: 200px;
+}
+
+form.inline .button {
+    width: 80px;
+    vertical-align: top;
+}
+
+#header-nav form.inline a  {
+    height: auto;
+    
+    display: inline-block; 
+    margin: 3px 0;
+    vertical-align: top;
+    
+    letter-spacing: 0;
+}
+
+/*
+ * Main body elements
+*/
+
+.slider{
+width: 960px;
+height: 600px;
+overflow: hidden;
+margin: 0px auto;
+
+
+
+}
+.slider img{
+width: 960px;
+height: 600px;
+margin:   0px auto;
+display: none;
+	
+}
+
+
+
+#slideIcons{
+    /*float:left;*/
+    /*margin-left:400px;*/
+    /*padding-bottom:20px;*/
+   /*padding-left: 850px;*/
+   /*padding-right: 125px;*/
+   margin: -80px 440px;
+   display: block;
+    
+}
+
+
+#prevIcon{
+    float:left;
+    display: block;
+}
+
+
+#nextIcon{
+    float:left;
+    display: block;
+    
+}
+
+
+#prevIcon:hover{
+    
+    opacity:0.6;
+}
+
+#nextIcon:hover{
+    
+    opacity:0.6;
+}
+
+
+
+
+
+
+.banner {
+    clear: both;
+    
+    width: 100%;
+    min-width: 960px;
+    height: 500px;
+    
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.banner-heading{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+    text-shadow: 1px 1px #999;
+    font-weight: 400;
+}
+.banner-body {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 960px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*
+ * Heart diagram navigation
+*/
+
+#wrapperD {
+    
+    
+    margin-top: -45px;
+    
+    background-color: #606B75;
+    color: white;
+	
+	width: 100%;
+}
+
+#heartImage {
+    
+    
+    display: block;
+    margin: 0 auto;
+}
+
+#hoverTag{
+    color:white;
+    opacity: 0.7;
+    position: absolute;
+    
+    display: block;
+    /*text-align: center;*/
+    padding-left: 20px;
+    top:620px;
+    margin:0 auto;
+}
+
+
+#hoverDescription{
+    /*background-color: yellow;*/
+    color:white;
+    opacity: 0.7;
+    position: absolute;
+    float:left;
+    /*display: block;*/
+    /*text-align: left;*/
+    
+    /*top:200px;*/
+    /*left:40px;*/
+    /*margin:0 auto;*/
+    /*padding: 20px 15px 0 15px;*/
+    /*box-sizing: border-box; */
+    
+    
+    padding-top: 100px;
+    padding-left: 20px;
+    
+}
+
+
+
+
+.content {
+    display: block;
+    margin: 0 auto;
+    width: 960px;
+}
+
+.content-image {
+    display: block;
+    margin: 0 auto;
+}
+
+article {
+    padding: 20px 15px 0 15px;
+    box-sizing: border-box; /*Prevent padding from increasing size*/
+}
+
+.push {
+    clear: both;
+    height: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    
+    /*Offset anchor position for headings*/
+    padding-top: 45px;
+    margin-top: -45px;
+}
+
+h1 {
+    text-align: center;
+    
+    font-size: 5em;
+    font-weight: 400;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    
+    margin-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    
+    font-size: 2em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: 400;
+}
+
+em {
+    font-style: italic;
+}
+
+#video-button {
+    width: 190px;
+    
+    display: block;
+    margin: 0 auto;
+}
+
+/*Elements to be positioned as columns using half of the page*/
+.col-2 {
+    float: left;
+    width: 479px;
+}
+
+/*Elements to be positioned as columns using third of the page*/
+.col-3 {
+    float: left;
+    width: 319px;
+}
+
+/*Elements to be positioned as columns using 2 thirds of the page*/
+.col-3-2 {
+    float: left;
+    width: 639px;
+}
+
+.anchor-target, .anchor-target:hover {
+    color: black;
+    text-decoration: none;
+}
+.anchor-target:target {
+    text-decoration: underline;
+}
+.content-list li {
+    margin-bottom:1em;
+}
+
+.score-table {
+    width: 100%;
+}
+.score-table th {
+    text-align: left;
+}
+/*Select alternating table rows*/
+.score-table tr:nth-child(odd) {
+    background-color: #DDD;
+}
+
+th {
+    font-weight: 400;
+}
+
+/*
+ * Related items
+*/
+
+#related{
+    clear:left;
+}
+
+#related a:hover {
+    text-decoration: none;
+}
+#related h6{
+    margin-left:20px;
+}
+.relateditems{
+    height:100px;
+    width:250px;
+     float:left;
+     margin-left:20px;
+    /*display:inline-block;*/
+}
+
+.relateditems p {
+    padding-top: 25px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#treatment {
+     background:url(../image/relateditems/treatment.jpg);
+}
+
+#facts {
+    background:url(../image/relateditems/facts.jpg);
+}
+
+#healthy {
+    background:url(../image/relateditems/healthy1.jpg);
+}
+
+#type{
+    background:url(../image/relateditems/type.jpg);
+}
+
+/*
+ * Lists
+*/
+ul {
+    list-style-position: inside;
+    list-style-type: disc;
+    margin: 0 0 10px 20px;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type:decimal;
+    list-style-position:outside;
+    
+    margin-left: 20px;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+li {
+    display: list-item;
+    margin-bottom: 1em;
+}
+
+/*
+ * Footer
+*/
+#footer-push {
+    clear: both;
+    height: 360px;
+}
+
+#main-footer {
+    background-color: white;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    width: 100%;
+    min-width: 960px;
+    
+    box-shadow: 0 -10px 50px -20px #BBB;
+    border-top: #D6D6D6 1px solid;
+    
+    font-size: 13px;
+}
+
+#footer-sitemap, #footer-nav {
+    display: block;
+    margin: 0px auto;
+    
+    width: 960px;
+    margin-top: 15px;
+    border-top: #F9F2F2 1px solid;
+}
+
+#footer-sitemap a {
+    font-weight: 300;
+}
+#footer-sitemap strong a {
+    font-weight: 400;
+}
+
+/*Divide the parts of the sitemap into three columns*/
+#footer-sitemap div {
+    width: 315px;
+    float: left;
+    padding: 15px 0;
+}
+
+#footer-nav {
+    clear: both;
+    margin-top: -1px;
+}
+
+#footer-nav ul {
+    list-style-type: none;
+}
+
+#footer-nav li {
+    height: 30px;
+    padding: 13px 20px 0 0;
+    float: left;
+}
+
+#footer-logo {
+    display: block;
+    margin: 10px auto 10px auto;
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
+    opacity: 0.25;
+}
+
+/*
+ * Form elements
+*/
+
+/*The area containing a form*/
+.form-area {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    box-sizing: border-box; /*Prevent padding from increasing size*/
+}
+
+.button, .text-input, textarea, select {
+    width: 100%;
+    max-width: 100%;
+    max-height: 420px;
+    
+    padding: 0 2px;
+    margin: 5px 0;
+    box-sizing: border-box; /*Prevent padding from increasing size*/
+    border: 1px solid #999;
+    border-radius: 2px;
+    
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+input {
+    height: 25px;
+}
+
+input[type="radio"] {
+    margin: 5px;
+}
+
+.button {
+    background-color: white;
+}
+.button:hover:enabled {
+    background-color: #D21F2D;
+    color: white;
+}
+.button:focus {
+    border-color: black;
+}
+
+label {
+    vertical-align: super;
+}
+
+form .error {
+    color: red;
+}
+
+/*JQueryUI Slider elements*/
+.ui-slider {
+    margin: 10px 0;
+}
+
+.ui-dialog .ui-dialog-content {
+    overflow: hidden;
+}
